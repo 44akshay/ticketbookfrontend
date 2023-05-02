@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import BookingBox from "./components/BookingBox";
+import DisplayBox from "./components/DisplayBox";
+import Seat from "./components/Seat";
+import SeatBox from "./components/SeatBox";
+import { StateProvider } from "./components/StateProvider";
+import './components/layout.css'
+import { initialState, reducer } from "./components/reducer";
 
 function App() {
+  
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="applayout">
+      <StateProvider initialState={initialState} reducer={reducer} >
+      <BookingBox/>
+      <SeatBox/>
+      <DisplayBox/>
+      </StateProvider>
     </div>
   );
 }
