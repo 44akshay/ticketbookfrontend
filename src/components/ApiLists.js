@@ -1,4 +1,5 @@
-export const BOOKINGREQUEST="http://localhost:9090/bookingapp/getseatnumber";
-export const GETALLSEATSTATUS="http://localhost:9090/bookingapp/getallseatstatus";
-export const GETALLUSERS="http://localhost:9090/bookingapp/getallbookedusers";
-export const RESET="http://localhost:9090/bookingapp/reset";
+
+export const BOOKINGREQUEST="https://akshayticketbookapp.online/bookingapp/getseatnumber";
+export const GETALLSEATSTATUS="https://akshayticketbookapp.online/bookingapp/getallseatstatus";
+export const GETALLUSERS="https://akshayticketbookapp.online/bookingapp/getallbookedusers";
+export const RESET="https://akshayticketbookapp.online/bookingapp/reset";
